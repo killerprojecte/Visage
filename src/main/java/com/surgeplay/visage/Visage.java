@@ -173,7 +173,7 @@ public class Visage {
 
 	private static void download(String path, String commit) throws MalformedURLException, IOException {
 		log.info("Downloading "+path);
-		Resources.asByteSource(new URL("https://raw.githubusercontent.com/surgeplay/Visage/"+commit+"/"+path))
+		Resources.asByteSource(new URL("https://raw.githubusercontent.com/killerprojecte/Visage/"+commit+"/"+path))
 			.copyTo(Files.asByteSink(new File(path)));
 	}
 }
